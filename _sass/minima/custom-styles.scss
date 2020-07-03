@@ -7,5 +7,12 @@
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
+.post figcaption {
+  text-align: justify;
+  font-size: .8rem;
+  font-style: italic;
+  color: #E4D5C6;
+}
+
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
