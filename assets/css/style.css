@@ -436,11 +436,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .post figcaption { text-align: justify; font-size: .8rem; font-style: italic; color: #E4D5C6; }
 
-.post-title { margin-top: .5rem !important; }
-
-li h3, li h4 { margin-top: .05rem !important; margin-bottom: .05rem !important; }
-
-li .post-meta-description { color: #cf27fb; font-size: 15px; margin-top: .05rem !important; margin-bottom: .05rem !important; }
+.post body { color: #E4D5C7; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
