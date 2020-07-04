@@ -436,7 +436,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .post figcaption { text-align: justify; font-size: .8rem; font-style: italic; color: #E4D5C6; }
 
-body { background-color: #E4D5C7; }
+* { background-color: #E4D5C7; text-align: justify; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
