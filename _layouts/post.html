@@ -13,7 +13,7 @@ layout: default
       {%- endif -%}
     {%- endif -%}
     <p class="post-meta post-meta-title">
-      {%- assign date_format = site.minima.date_format | default: "%-d/%b/%Y" -%}
+      {%- assign date_format = site.minima.date_format | default: "%-d/%m/%Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
