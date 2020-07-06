@@ -3,6 +3,8 @@ layout: page
 title: Sobre mí
 permalink: /about/
 ---
+
+<img src="https://www.gravatar.com/avatar/a07057e66b67cf5a219c684edd2519f4" alt="Avatar" class="avatar">
   
 Soy Victor, primero me diplomé en Magisterio, después me gradué en Psicología y ahora estoy terminado un Máster en Metodología en Ciencias del Comportamiento y de la Salud.  
   
