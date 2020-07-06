@@ -438,7 +438,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .twitter-tweet { margin: auto; }
 
-.avatar { vertical-align: middle; width: 70px; height: 70px; border-radius: 50%; }
+.avatar { vertical-align: middle; width: 70px; height: 70px; border-radius: 75%; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
