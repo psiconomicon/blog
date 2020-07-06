@@ -4,10 +4,10 @@ title: Sobre mí
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Soy Victor, primero diplomado en Magisterio, después me gradué en Psicología y ahora estoy termiando un Máster en Metodología en ciencias del comportamiento y de la salud.
+He resisdido ya en España, Francia y actualmente vivo en Alemania. 
+Me gusta la Psicología y el análsis de datos.
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Y creo que con esto cubrimos por el momento esta sección, que esta en desarrollo. Como yo. 
 
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
