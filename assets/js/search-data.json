@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "Sobre mí",
-          "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "Soy Victor, primero diplomado en Magisterio, después me gradué en Psicología y ahora estoy termiando un Máster en Metodología en ciencias del comportamiento y de la salud. He resisdido ya en España, Francia y actualmente vivo en Alemania. Me gusta la Psicología y el análsis de datos. . Y creo que con esto cubrimos por el momento esta sección, que esta en desarrollo. Como yo. .",
           "url": "/blog/about/",
           "relUrl": "/about/",
           "date": ""
