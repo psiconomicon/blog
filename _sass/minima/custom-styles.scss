@@ -13,53 +13,6 @@
   background-color: #E4D5C7;
 }
 
-.flash {
-  // stylelint-disable-next-line primer/colors
-  background-color: #EBF8FF;
-  // stylelint-disable-next-line primer/borders
-  border-color: #EBF8FF; opacity:0.2;
-
-  .octicon {
-    // stylelint-disable-next-line primer/colors
-    color: #2b6cb0; opacity:0.6;
-  }
-}
-
-.flash-warn {
-  // stylelint-disable-next-line primer/colors
-  background-color: #fffff0;
-  // stylelint-disable-next-line primer/borders
-  border-color: #975a16; opacity:0.2;
-
-  .octicon {
-    // stylelint-disable-next-line primer/colors
-    color: #975a16; opacity:1;
-  }
-}
-
-.flash-error {
-  // stylelint-disable-next-line primer/colors
-  background-color: #ffe3e6; // custom red
-  // stylelint-disable-next-line primer/borders
-  border-color: #9b2c2c; opacity:0.2;
-
-  .octicon {
-    // stylelint-disable-next-line primer/colors
-    color: #9b2c2c; opacity:0.6;
-  }
-}
-
-.flash-success {
-  background-color: #90EE90;
-  // stylelint-disable-next-line primer/borders
-  border-color: #2f855a; opacity:0.2;
-
-  .octicon {
-    // stylelint-disable-next-line primer/colors
-    color: #2f855a; opacity:0.6;
-  }
-}
-
 .twitter-tweet {
   margin:auto;
 }
