@@ -434,9 +434,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.post { text-align: justify; background-color: #E4D5C7; }
-
-.home { background-color: #E4D5C7; }
+.page-content { text-align: justify; background-color: #E4D5C7; }
 
 .site-header { background-color: #E4D5C7; }
 
