@@ -434,7 +434,7 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-* { text-align: justify; background-color: #E4D5C7; }
+body { text-align: justify; background-color: #E4D5C7; }
 
 .twitter-tweet { margin: auto; }
 
