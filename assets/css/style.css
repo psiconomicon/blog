@@ -438,6 +438,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .home { background-color: #E4D5C7; }
 
+.site-header { background-color: #E4D5C7; }
+
 .twitter-tweet { margin: auto; }
 
 .avatar { vertical-align: middle; width: 70px; height: 70px; border-radius: 75%; }
