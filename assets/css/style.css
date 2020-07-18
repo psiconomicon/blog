@@ -436,22 +436,6 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*----- ADD YOUR STYLES BELOW -------*/
 * { text-align: justify; background-color: #E4D5C7; }
 
-.flash { background-color: #EBF8FF; border-color: #EBF8FF; opacity: 0.2; }
-
-.flash .octicon { color: #2b6cb0; opacity: 0.6; }
-
-.flash-warn { background-color: #fffff0; border-color: #975a16; opacity: 0.2; }
-
-.flash-warn .octicon { color: #975a16; opacity: 1; }
-
-.flash-error { background-color: #ffe3e6; border-color: #9b2c2c; opacity: 0.2; }
-
-.flash-error .octicon { color: #9b2c2c; opacity: 0.6; }
-
-.flash-success { background-color: #90EE90; border-color: #2f855a; opacity: 0.2; }
-
-.flash-success .octicon { color: #2f855a; opacity: 0.6; }
-
 .twitter-tweet { margin: auto; }
 
 .avatar { vertical-align: middle; width: 70px; height: 70px; border-radius: 75%; }
