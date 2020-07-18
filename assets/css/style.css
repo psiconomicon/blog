@@ -440,6 +440,8 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .site-header { background-color: #E4D5C7; }
 
+.site-footer { background-color: #E4D5C7; }
+
 .twitter-tweet { margin: auto; }
 
 .avatar { vertical-align: middle; width: 70px; height: 70px; border-radius: 75%; }
