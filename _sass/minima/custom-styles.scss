@@ -8,9 +8,56 @@
 /*----- ADD YOUR STYLES BELOW -------*/
 
 
-.post {
+* {
   text-align: justify; 
   background-color: #E4D5C7;
+}
+
+.flash {
+  // stylelint-disable-next-line primer/colors
+  background-color: $blue-100;
+  // stylelint-disable-next-line primer/borders
+  border-color: rgba($blue-700, 0.2);
+
+  .octicon {
+    // stylelint-disable-next-line primer/colors
+    color: rgba($blue-700, 0.6);
+  }
+}
+
+.flash-warn {
+  // stylelint-disable-next-line primer/colors
+  background-color: $yellow-100;
+  // stylelint-disable-next-line primer/borders
+  border-color: rgba($yellow-800, 0.2);
+
+  .octicon {
+    // stylelint-disable-next-line primer/colors
+    color: rgba($yellow-800, 1);
+  }
+}
+
+.flash-error {
+  // stylelint-disable-next-line primer/colors
+  background-color: #ffe3e6; // custom red
+  // stylelint-disable-next-line primer/borders
+  border-color: rgba($red-800, 0.2);
+
+  .octicon {
+    // stylelint-disable-next-line primer/colors
+    color: rgba($red-800, 0.6);
+  }
+}
+
+.flash-success {
+  background-color: $bg-green-light;
+  // stylelint-disable-next-line primer/borders
+  border-color: rgba($green-700, 0.2);
+
+  .octicon {
+    // stylelint-disable-next-line primer/colors
+    color: rgba($green-700, 0.8);
+  }
 }
 
 .twitter-tweet {
