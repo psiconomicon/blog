@@ -47,7 +47,7 @@
     
         ,"post4": {
             "title": "Fastpages Notebook Blog Post",
-            "content": "#collapse-hide import pandas as pd import altair as alt from altair.expr import datum alt.data_transformers.enable(&#39;data_server&#39;) df_palabras = pd.read_csv(&#39;https://raw.githubusercontent.com/psiconomicon/blog/master/assets/lista_palabras.csv&#39;) df_casos = pd.read_csv(&#39;https://raw.githubusercontent.com/psiconomicon/blog/master/assets/casos_decesos.csv&#39;) . .",
+            "content": "#collapse-hide import pandas as pd import altair as alt from altair.expr import datum alt.data_transformers.enable(&#39;data_server&#39;) . .",
             "url": "/blog/jupyter/2020/02/20/test-Copy1.html",
             "relUrl": "/jupyter/2020/02/20/test-Copy1.html",
             "date": " • Feb 20, 2020"
