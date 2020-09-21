@@ -242,6 +242,41 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">confin_casos</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">confina_df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_rect</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">'firebrick'</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">'x_min:T'</span><span class="p">,</span>
+    <span class="n">x2</span><span class="o">=</span><span class="s1">'x_max:T'</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">'y_min:Q'</span><span class="p">,</span>
+    <span class="n">y2</span><span class="o">=</span><span class="s1">'y_max:Q'</span><span class="p">)</span>
+
+<span class="n">base1</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_casos</span><span class="p">)</span>
+<span class="n">casos</span> <span class="o">=</span> <span class="n">base1</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">(</span><span class="n">opacity</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'date:T'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Fecha'</span><span class="p">),</span> 
+                                           <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">'new_cases_ESP:Q'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Casos"</span><span class="p">))</span>
+<span class="n">decesos</span> <span class="o">=</span> <span class="n">base1</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">'orange'</span><span class="p">,</span><span class="n">opacity</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'date:T'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Fecha'</span><span class="p">),</span> 
+                                           <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">'new_deaths_ESP:Q'</span><span class="p">))</span>
+
+
+<span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="n">confin_casos</span> <span class="o">+</span> <span class="n">casos</span> <span class="o">+</span> <span class="n">decesos</span><span class="p">)</span><span class="o">.</span><span class="n">interactive</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
 </div>
 
 
