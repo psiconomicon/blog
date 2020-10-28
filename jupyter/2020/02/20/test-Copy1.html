@@ -114,7 +114,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      ⏱️ 2 min
+      ⏱️ 4 min
     
 </span>
 </p>
@@ -340,6 +340,15 @@ Así que aqui tenemos el reto, 6 medios de comunicación, 171.107 twits y 1.777.
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este grafico muestra los nuevos casos registrados diariamente y la sección en fondo rojo el confinamiento en España. Como podemos la  observar da la sensación de que la segunda ola es ahora tan grande como la primera.  Pero como mostraron datadista esto es un error. Vamos a hacer nuestra propia versión. Gracias al estudio de Seroprevalencia, ahora sabemos que durante la primera ola, sólo detectábamos un contagiado de cada 10. Por suerte, las técnicas han mejorado y estimamos que ahora detectamos a 7 de cada 10. Y eso en que se traduce:
+Exacto, la nueva estimación es que ahora no estamos ni de lejos tan mal como durante la primera ola. Y si tomamos lo que indicaba Tomas Pueyo, el confinamiento fue el martillo para doblar la curva, y ahora estamos viviendo la danza.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -390,12 +399,12 @@ Así que aqui tenemos el reto, 6 medios de comunicación, 171.107 twits y 1.777.
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-35d10142b2804baba5c9e87871b1479f"></div>
+<div id="altair-viz-c7a61f568d9e4be592ad9808bc65a7c6"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-35d10142b2804baba5c9e87871b1479f") {
-      outputDiv = document.getElementById("altair-viz-35d10142b2804baba5c9e87871b1479f");
+    if (outputDiv.id !== "altair-viz-c7a61f568d9e4be592ad9808bc65a7c6") {
+      outputDiv = document.getElementById("altair-viz-c7a61f568d9e4be592ad9808bc65a7c6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -437,7 +446,7 @@ Así que aqui tenemos el reto, 6 medios de comunicación, 171.107 twits y 1.777.
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"layer": [{"data": {"url": "http://localhost:16831/1fdb693032568e96c60c22a506932d20.json"}, "mark": {"type": "rect", "color": "firebrick", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "x_min"}, "x2": {"field": "x_max"}, "y": {"type": "quantitative", "field": "y_min"}, "y2": {"field": "y_max"}}, "selection": {"selector003": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}}, {"data": {"url": "http://localhost:16831/0a6a7e53a68f53e896f7487261e02733.json"}, "mark": {"type": "bar", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "date", "title": "Fecha"}, "y": {"type": "quantitative", "field": "new_cases_ESP", "title": "Casos"}}}, {"data": {"url": "http://localhost:16831/0a6a7e53a68f53e896f7487261e02733.json"}, "mark": {"type": "bar", "color": "orange", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "date", "title": "Fecha"}, "y": {"type": "quantitative", "field": "new_deaths_ESP"}}}]}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"layer": [{"data": {"url": "http://localhost:22647/1fdb693032568e96c60c22a506932d20.json"}, "mark": {"type": "rect", "color": "firebrick", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "x_min"}, "x2": {"field": "x_max"}, "y": {"type": "quantitative", "field": "y_min"}, "y2": {"field": "y_max"}}, "selection": {"selector001": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}}, {"data": {"url": "http://localhost:22647/0a6a7e53a68f53e896f7487261e02733.json"}, "mark": {"type": "bar", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "date", "title": "Fecha"}, "y": {"type": "quantitative", "field": "new_cases_ESP", "title": "Casos"}}}, {"data": {"url": "http://localhost:22647/0a6a7e53a68f53e896f7487261e02733.json"}, "mark": {"type": "bar", "color": "orange", "opacity": 0.1}, "encoding": {"x": {"type": "temporal", "field": "date", "title": "Fecha"}, "y": {"type": "quantitative", "field": "new_deaths_ESP"}}}]}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -449,6 +458,15 @@ Así que aqui tenemos el reto, 6 medios de comunicación, 171.107 twits y 1.777.
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es normal que los casos suban y bajen. Hay tener en cuenta que aunque los datos pareca que se repitan de nuevo, no es la misma historia. 
+¿Y lo medios de comunicación entonces? Vamos a comparar el grafico de casos estimados con las noticias. La situación ha mejorado, pero sigue habiendo una gran cantidad de noticias sobre casos y el virus. Entiendo que sea un tema de actualidad, pero la omnipresencia en los medios afecta a nuestra percepción de la realidad.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
