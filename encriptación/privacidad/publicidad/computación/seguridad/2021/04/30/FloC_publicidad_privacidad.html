@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Federated learning of Cohorts, publicidad y privacidad | Psiconomicón</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Federated learning of Cohorts, publicidad y privacidad" />
+<meta name="author" content="victoregb" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar." />
+<meta property="og:description" content="En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar." />
+<link rel="canonical" href="/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html" />
+<meta property="og:url" content="/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html" />
+<meta property="og:site_name" content="Psiconomicón" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"victoregb"},"headline":"Federated learning of Cohorts, publicidad y privacidad","description":"En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar.","datePublished":"2021-04-30T00:00:00-05:00","dateModified":"2021-04-30T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html"},"url":"/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Psiconomicón" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-29209197-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/psiconomicon/blog/master/images/android-chrome-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://github.com/psiconomicon/blog/tree/master/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://github.com/psiconomicon/blog/tree/master/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://github.com/psiconomicon/blog/tree/master/images/favicon-16x16.png">
+<link rel="manifest" href="https://github.com/psiconomicon/blog/tree/master/images/site.webmanifest">
+<link rel="mask-icon" href="https://github.com/psiconomicon/blog/tree/master/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://github.com/psiconomicon/blog/tree/master/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Federated learning of Cohorts, publicidad y privacidad | Psiconomicón</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Federated learning of Cohorts, publicidad y privacidad" />
+<meta name="author" content="victoregb" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar." />
+<meta property="og:description" content="En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar." />
+<link rel="canonical" href="/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html" />
+<meta property="og:url" content="/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html" />
+<meta property="og:site_name" content="Psiconomicón" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"victoregb"},"headline":"Federated learning of Cohorts, publicidad y privacidad","description":"En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar.","datePublished":"2021-04-30T00:00:00-05:00","dateModified":"2021-04-30T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html"},"url":"/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Psiconomicón" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-29209197-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Psiconomicón</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">Sobre mí</a><a class="page-link" href="/blog/search/">🔍 Buscar</a><a class="page-link" href="/blog/categories/">📁 Categorías</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Federated learning of Cohorts, publicidad y privacidad</h1><p class="page-description">En la actualidad se está dando una mayor prioridad al desarrollo de nuevas tecnologías que preserven la privacidad de usuario. Una de ellas es el federated learning. En este post voy a dar algunas pinceladas sobre lo que es, cual es su utilidad y porqué nos debería importar.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-30T00:00:00-05:00" itemprop="datePublished">
+        30/04/2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">victoregb</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      ⏱️ 7 min
+    
+</span>
+</p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#encriptación">encriptación</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#privacidad">privacidad</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#publicidad">publicidad</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#computación">computación</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#seguridad">seguridad</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-04-30-FloC_publicidad_privacidad.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ha saltado la noticia de que <a href="https://www.xataka.com/servicios/floc-alternativa-google-a-cookies-no-convence-duckduckgo-brave-se-han-pronunciado-van-a-bloquearlo">Google está proponiendo una solución al problema de las cookies</a> mediante algo llamado FloC o Federated Learning of Cohorts. Para algunos es una solución que preserva la privacidad del usuario mientras permite el rastreo, para otros es la peor solución que Google podría haber tomado. 
+Algunas de las reacciones que podríamos tener son:</p>
+<p><a href="#id1">Espera, ¡eso de que nos rastreen es malo!</a><br />
+<a href="#id2">¿Fede…que?</a><br />
+<a href="#id3">¿Pero que pasa con MIS datos? ¿Y mi privacidad?</a><br />
+<a href="#id4">¿Y dónde están los PEROS?</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Espera,-&#161;eso-de-que-nos-rastreen-es-malo!-"><strong>Espera, &#161;eso de que nos rastreen es malo!</strong> <a name="id1" /><a class="anchor-link" href="#Espera,-&#161;eso-de-que-nos-rastreen-es-malo!-"> </a></h4><p>Bueno, empecemos por como funcionan las <em>cookies</em> de terceros que es lo que tenemos ahora. Las <em>cookies</em> son eso que siempre aceptamos cuando abrimos una pagina web. Tras la aprobación <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">en Europa de la GDPR (General Data Protection Regulation)</a> empezó a aparecer en todos nuestro navegador un banner para recordarnos que cada vez que entramos en una web damos permisos para que nos rastreen. Y aunque nos pueda parecer algo engorroso, encuentro que es algo positivo para concienciarnos. De cierta forma acerca eso que sucede entre bambalinas a nuestra experiencia del día a día. Y si por un casual nos pica la curiosidad es posible ver la (en ocasiones) alarmante cantidad de rastreadores a los que damos permisos cuando damos a Aceptar.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Pero que es eso de las cookies? Las <em>cookies</em> son un tipo de información que se almacena en el navegador y que cumple dos funciones. La primera y <strong>muy útil es recordar accesos</strong> (evitándonos tener que estar constantemente introduciendo nuestro usuario y contraseña cada vez que usamos un servicio). La segunda y <strong>más oscura, que empresas puedan recopilar nuestros datos</strong> de navegación para poder ofrecernos publicidad acorde a nuestro perfil <a href="https://psiconomicon.github.io/blog/psicolog%C3%ADa/privacidad/datos/libro/2021/03/24/Datanomics.html">como nos explican en <em>Datanomics</em></a>. Lo cual presenta riesgos para nuestra privacidad y el aumento de nuestra vulnerabilidad frente a los spyware. Ante esto, se están desarrollando tecnologías como el cifrado homomórfico y el que hoy nos atañe, el federated learning.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#191;Fede&#8230;que?"><strong>&#191;Fede&#8230;que?</strong><a name="id2" /><a class="anchor-link" href="#&#191;Fede&#8230;que?"> </a></h4><p>El _<a href="https://en.wikipedia.org/wiki/Federated_learning">federated learning</a>_ es una tecnología relativamente reciente (empezó a surgir en 2015) que tiene por <strong>eje principal preservar la privacidad</strong> a la par que permite el procesado de datos. Hablando claro, el objetivo sería procesar la información sin que esta abandonara el dispositivo en el que se almacena. <a href="https://web.dev/floc/">El concepto en sí es contraintuituvo.</a> ¿Trabajar con información sobre la que no tenemos acceso? Si, mediante aprendizaje automático. Para alejarnos un poco del ejemplo de la privacidad del usuario pondré un ejemplo a nivel empresarial, donde también existe interés en desarrollar estas técnicas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imaginemos que somos una startup que quiere entrenar su algoritmo con los datos de diferentes empresas. Sin embargo, nosotros no queremos compartir con dicha startup ni con las otras nuestra base de datos ya que es nuestro ‘secreto comercial’. No queremos, ni podemos, compartir dicha información confidencial. ¿Podemos salir de ese callejón sin salida? Podríamos firmar un acuerdo de confidencialidad, pero siempre que compartes cierta información pierdes el control sobre la copia de la misma (exactamente el mismo problema que el de la piratería de música, películas y series). ¿Entonces…?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Estamos en la misma situación que la del usuario medio, quiere preservar la privacidad de sus datos, pero a la par, obtener un servicio que requiere del uso de los mismos. Mediante <strong><em>federated learning</em> lo que podemos hacer es enviar un modelo a los diferentes propietarios de los datos y agregar los resultados que estos nos envíen de vuelta</strong>. De esta manera, <strong>nadie tiene acceso a los datos a parte del dueño</strong> a la par que obtenemos el modelo entrenado que queríamos. Algo similar es lo que proponen hacer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sin embargo, se están desarrollando tecnologías que buscan proteger la privcidad del usuario. Gigantes de internet como Google o Facebook están alentando el desarrollo de estas tecnologías. Por un lado, <strong>lo podríamos considerar un lavado de imagen</strong>, es tecnología que está siendo desarrollada con la privacidad como eje principal, una cuestión por la que son duramente criticados. Por otro lado, pese a que puede plantear problemas para sus modelos de negocio a largo plazo, no a corto. Como estamos viendo, el cambio que ellos proponen es seguir con el modelo de negocio de la publicidad tomando medidad que preserven la privacidad del usuario.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#191;Pero-que-pasa-con-MIS-datos?-&#191;Y-mi-privacidad?"><strong>&#191;Pero que pasa con MIS datos? &#191;Y mi privacidad?</strong><a name="id3" /><a class="anchor-link" href="#&#191;Pero-que-pasa-con-MIS-datos?-&#191;Y-mi-privacidad?"> </a></h4><p>Ahora mismo has perdido el control sobre esos datos ya que empresas rastreadoras estan recopilando tus datos para generar un perfil, tu YO digital, y te/lo usan para lucrarse. Si te asalta la duda de <em>¿Porqué me deberia importar?</em> Te remito a la entrada sobre <em>Datanomics</em>. La diferencia mediante Federated learning es que técnicamente <strong>los datos del usuario siguen siendo privados ya que la información estaría a salvo dentro del dispositivo</strong> y el resultado sería ser asignado a una cohorte (imagínate una manda de cebras, los leones no pueden ir a por una porque el individuo se confunde con el todo).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>El sistema no es perfecto</strong>, si alguien guarda la información cada vez que a uno le resignan de cohorte (o manada) al final se puede hacer un perfil individualizado, en otras palabras, desanonimizar los datos. Existe una métrica para saber cuanta privacidad se ‘pierde’ debido a estos intercambios conocidos como <a href="https://en.wikipedia.org/wiki/Differential_privacy">privacidad diferencial</a>. Para ser más precisos, $\epsilon$<em>-privacidad diferencial</em> para cuando los datos se comparten de forma intencionada y $\delta$<em>-privacidad diferencial</em> para la probabilidad de ‘fuga’ o robo de datos. Donde, llegados a cierto punto, la desanonimización es posible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como siempre esto es una carrera entre encriptación y desencriptación donde se pueden implantar estrategias para mitigar esta pérdida de $\epsilon$<em>-privacidad diferencial</em>, a la par que se siguen investigado tecnologías para evitar dicha pérdida. Ninguna tecnología es perfecta, por lo que una vez hecha la ley, hecha la trampa.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#191;Y-d&#243;nde-est&#225;n-los-Peros?"><strong>&#191;Y d&#243;nde est&#225;n los Peros?</strong><a name="id4" /><a class="anchor-link" href="#&#191;Y-d&#243;nde-est&#225;n-los-Peros?"> </a></h4><p>Eso depende de aquien le preguntes. Por un lado tenemos a <em>Apple</em> cuya politica es respetar la privacidad del usuario dirá en todo. Recordemos que <em>Apple</em> hace negocio vendiendo dispositivos (y accesiorios para esos dispositivos) mientras que los ingresos de Facebook, por ejemplo, proceden de los anucios, por lo que están pero que muy a favor del restreo. <a href="https://www.bbc.com/news/technology-56831241?xtor=AL-72-%5Bpartner%5D-%5Bbbc.news.twitter%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D&amp;at_medium=custom7&amp;at_custom1=%5Bpost+type%5D&amp;at_custom3=%40BBCTech&amp;at_custom2=twitter&amp;at_campaign=64&amp;at_custom4=2BC5F6E8-A61E-11EB-8355-2EEC4744363C">Este conflicto de intereses y políticas entre los dos gigantes ha llevado a un choque entre ambos gigantes hace poco.</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como dije al inicio del post, para algunos <a href="https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea">la opción que ha elegido Google es pésima</a> y <a href="https://www.muycomputer.com/2021/04/11/google-chrome-floc/">animan a los usuarios a tratar de evitar ser participantes en las pruebas</a> que están llevando a cabo para comprobar la viabilidad del proyecto. Al principio me daba la impresión al leer los titulares y algunas partes de los articulos que el problema residía en la tecnología empleada. En cambio, a medida que leía, iba cayendo en la cuenta de que <strong>el problema reside en mismo seguimiento de los usuarios</strong>. Aunque sea para proporcionar publicidad el rastreo es potencialmente peligroso <a href="https://psiconomicon.github.io/blog/psicolog%C3%ADa/privacidad/datos/libro/2021/04/14/Addiction_by_design.html">como comenté en aquí</a>, más allá de que el sistema no sea perfecto. <strong>La posibilidad de crear perfiles individuales abre la puerta a la discriminación</strong>. Por lo que aquí entramos en un debate entre el <strong>idealismo</strong> (todo rastreo es peligroso), el <strong>pragmatismo</strong> (existe un problema, es necesario mitigarlo) y la <strong>ética</strong> (la privacidad del usuario es un derecho).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>
+<center>
+    <div class="jekyll-twitter-plugin"><blockquote class="twitter-tweet"><p lang="es" dir="ltr">Eso y mucho más. Esto, como con el virus, hay que entender la importante diferencia entre riesgo real y riesgo percibido así como beneficio real y percibido. El es riesgo abstracto e intangible, alejado de nuestra experiencia cotidiana frente al beneficio percibido y su impacto</p>&mdash; Victor E. Gil (@Victoregb) <a href="https://twitter.com/Victoregb/status/1362357864195588096?ref_src=twsrc%5Etfw">February 18, 2021</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</center>
+
+Personalmente encuentro que una posicion pragmatica es más realista para afrontar el problema y ponerle coto que tratar de cambiar la forma de actuar de millones de personas. Si tu argumento se aleja demasiado de la experiencia del dia a dia del ususario, lo más probable es que para ellos dicho argumento tenga poco peso. Es algo que estamos viendo con WhatsApp y sus cambios de condiciones, <a href="https://cincodias.elpais.com/cincodias/2021/01/20/lifestyle/1611130880_871395.html">hubo una gran migración a otros servicios</a>, pero aún está por ver que impacto real tiene.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Que pensáis de la implantación y desarrollo de este tipo de tecnologías para salvaguardar nuestra privacidad sin renunciar a los servicios? ¿Y vosotros que opináis? ¿Que pasos consideráis necesarios o que exigiríais para que se respete vuestra privacidad?</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="psiconomicon/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/encriptaci%C3%B3n/privacidad/publicidad/computaci%C3%B3n/seguridad/2021/04/30/FloC_publicidad_privacidad.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Un blog de Psicología y ciencia de datos.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/victoregb" title="victoregb"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/victoregb" title="victoregb"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
